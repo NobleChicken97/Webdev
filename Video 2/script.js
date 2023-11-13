@@ -1,0 +1,1 @@
+alert("Welcome to the official web page of pedo gang")
