@@ -5,31 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        /* Its speciificity is 1 */
       h1 {
         color: aqua;
       }
-     
-      .cred {
-        color: red;
-      }
+        /* Its speciificity is 1+10.
+        We will add specificity */
+      h1.yellow{
+        color:maroon;
+      } 
+      /* Its speciificity is 10 */
       .cpurple {
         color: purple;
       }
+      /* Its speciificity is 10 */
       .cred {
         color: red;
       }
+      /* Its speciificity is 10 */
       .yellow {
         color: yellow;
       }
-      /* [data-x=a]{
+
+        /* It is an example of attribute selector
+        Its specificity is 10 */
+     /* [data-x=a]{
         background-color: red;
       } */
+      
+
     </style>
   </head>
   <body>
     <div>
-      <h1 class = "yellow cred cpurple" data-x="a">CSS Specificity</h1>
-      inline style &gt; ID selector &gt; class or attribute selector &gt; element selector &gt; universal selector
+      <h1 style="color:maroon" class= "yellow cred cpurple" data-x="a">CSS Specificity</h1>
+      inline style &gt; ID selector &gt; class or attribute selector or pseudo &gt; element selector &gt; universal selector
+    </div>
+    <div>
+        If we write "!Important" after any style,then this will overwrite even inline selector.Its specificity is 10000</div>
+        <p style="font-weight:bold;">DAMN!</p>
     </div>
   </body>
 </html>
