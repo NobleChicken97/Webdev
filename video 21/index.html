@@ -8,9 +8,7 @@
       h1 {
         color: aqua;
       }
-      .yellow {
-        color: yellow;
-      }
+     
       .cred {
         color: red;
       }
@@ -20,11 +18,18 @@
       .cred {
         color: red;
       }
+      .yellow {
+        color: yellow;
+      }
+      /* [data-x=a]{
+        background-color: red;
+      } */
     </style>
   </head>
   <body>
     <div>
-      <h1 class="yello cred cpurple">CSS Specificity</h1>
+      <h1 class = "yellow cred cpurple" data-x="a">CSS Specificity</h1>
+      inline style &gt; ID selector &gt; class or attribute selector &gt; element selector &gt; universal selector
     </div>
   </body>
 </html>
