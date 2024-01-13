@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows and Outlines</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 34px;
+        box-shadow: 5px 15px 5px green;
+      }
+
+      .text-shadow {
+        text-shadow: 8px 3px 5px rgb(125, 80, 202);
+        border:2px solid red;
+        outline: 2px solid black;
+        outline-offset: 20px;
+      }
+      /*Outline exists outside of border
+      We cannot directly change the radius of the outline 
+      But we can do it indirectly by chnaging the border radius*/
+    </style>
+  </head>
+  <body>
+    <div class="box">I am a box</div>
+    <p class="text-shadow">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis atque
+      quasi inventore voluptatum, eveniet tempora porro nobis ad. Minima veniam
+      quisquam eveniet totam blanditiis dolor aspernatur praesentium animi iusto
+      doloremque, aperiam, deleniti illo laborum?
+    </p>
+  </body>
+</html>
